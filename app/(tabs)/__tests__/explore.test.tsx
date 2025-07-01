@@ -9,6 +9,8 @@ describe("Explore Screen", () => {
 
     await waitFor(() => {
       screen.debug();
+      expect(screen.getByText("Explore")).toBeOnTheScreen();
     });
+
   });
 });
